@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="width:1000px; margin: 0 auto;">
+        <table border="1" align="center" cellspacing="5">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+            <% for(let i=0; i < data.length; i++) { %>
+                <tr>
+                    <td>
+                        <%=i+1%>
+                    </td>
+                    <td>
+                        <%=data[i].name%>
+                    </td>
+                    <td>
+                        <%=data[i].email%>
+                    </td>
+                    <td>
+                        <%=data[i].address%>
+                    </td>
+                    <td>
+                        <%=data[i].mobile%>
+                    </td>
+                    <td>
+                        <%=data[i].gender%>
+                    </td>
+                </tr>
+                <% } %>
+        </table>
+    </div>
+</body>
+
+</html>
