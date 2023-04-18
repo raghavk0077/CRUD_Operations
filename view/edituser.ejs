@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit USer</title>
+</head>
+<body>
+    <form action="/editusersubmit" method="post">
+        <table>
+            <tr style="display: none;">
+                <td>Id:</td>
+                <td><input type="text" name="id" value="<%=data[0].id%>"/> </td>
+            </tr>
+            <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value="<%=data[0].name%>"/></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" value="<%=data[0].email%>"/></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address" value="<%=data[0].address%>"/></td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td><input type="number" name="mobile" value="<%=data[0].mobile%>"/></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input  type="submit" value="Update User" /></td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>
